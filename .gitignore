@@ -1,0 +1,15 @@
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Data files
+data/raw/*.csv
+data/processed/*.csv
+
+# Environment
+.env
+*.credentials
+
+# Mac
+.DS_Store
