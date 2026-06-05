@@ -1,0 +1,19 @@
+name: 'varsity_insights'
+version: '1.0.0'
+profile: 'varsity_insights'
+
+model-paths: ["varsity_insights/models"]
+analysis-paths: ["varsity_insights/analyses"]
+test-paths: ["varsity_insights/tests"]
+seed-paths: ["varsity_insights/seeds"]
+macro-paths: ["varsity_insights/macros"]
+snapshot-paths: ["varsity_insights/snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  varsity_insights:
+    example:
+      +materialized: view
