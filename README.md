@@ -1,10 +1,26 @@
 # Varsity Insights Platform
 
-A data platform for analyzing high school varsity sports participation across Texas school districts.
-
 ## Overview
 
-This project generates and models sports participation data for Texas school districts, segmented by district type (charter, rural, urban/suburban). It uses Python for data generation and dbt for data transformation and modeling.
+A business intelligence web application modeling sports distribution analytics across 1,216 Texas school districts. This project generates and models sports participation data for Texas school districts, segmented by district type (charter, rural, urban/suburban). It uses Python for data generation and dbt for data transformation and modeling.
+
+## Data Sources
+- Texas Education Agency (TEA) district classification data
+- Synthetic sports participation data modeled after 
+  NFHS participation patterns
+
+## Tech Stack
+- Snowflake — cloud data warehouse
+- dbt — data transformation layer
+- Java Spring Boot — REST API
+- React/TypeScript — frontend dashboard
+- PostgreSQL — local development
+
+## Architecture
+Raw TEA district data → Snowflake RAW schema → 
+dbt transformations → TRANSFORMED schema → 
+Spring Boot API → React dashboard
+
 
 ## Project Structure
 
